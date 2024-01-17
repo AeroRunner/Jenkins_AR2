@@ -19,7 +19,7 @@ public class RegitrationPageTest extends BaseTest {
 
     @DisplayName("Full Registration Page Test: Filing and Check Result Form")
     @Test
-    @Tag("registrationPage")
+    @Tag("regPageFull")
     public void filingAndCheckResultRegistrationPageTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Open Registration Page", () -> {
@@ -82,7 +82,7 @@ public class RegitrationPageTest extends BaseTest {
 
     @DisplayName("Registration Page only required fields test")
     @Test
-    @Tag("registrationPage")
+    @Tag("regPageShort")
     public void filingRequiredFieldsRegistrPage() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Open Registration Page", () -> {
@@ -119,7 +119,7 @@ public class RegitrationPageTest extends BaseTest {
     @DisplayName("Registration Page Negative Tests: " +
     "The modal window should not be displayed until the required fields are filled in ")
     @Test
-    @Tag("registrationPage")
+    @Tag("regPageNegative")
     public void requiredFieldsNegativeTests() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Open Registration Page", () -> {

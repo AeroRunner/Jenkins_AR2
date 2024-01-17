@@ -46,9 +46,18 @@ tasks.withType(Test) {
         }
     }
 }
-task regPage(type: Test) {
+task regPageFull(type: Test) {
     useJUnitPlatform {
-        includeTags("registrationPage")
+        includeTags("regPageFull")
     }
-
+    task regPageShort(type: Test) {
+        useJUnitPlatform {
+            includeTags("regPageShort")
+        }
+    }
+    task regPageNegative(type: Test) {
+        useJUnitPlatform {
+            includeTags("regPageNegative")
+        }
+    }
 }
