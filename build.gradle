@@ -38,6 +38,7 @@ test {
     useJUnitPlatform()
 }
 tasks.withType(Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform()
     testLogging {
         lifecycle {
@@ -59,5 +60,10 @@ task regPageNegative(type: Test) {
 task regPageShort(type: Test) {
     useJUnitPlatform {
         includeTags("regPageShort")
+    }
+}
+task prop(type: Test) {
+    useJUnitPlatform {
+        includeTags("prop")
     }
 }
