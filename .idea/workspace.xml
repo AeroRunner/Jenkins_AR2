@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="425487e1-f2f8-496d-8fff-2d3a189b5df3" name="Changes" comment="initall commit" />
+    <list default="true" id="425487e1-f2f8-496d-8fff-2d3a189b5df3" name="Changes" comment="initall commit">
+      <change afterPath="$PROJECT_DIR$/notifications/allure-notifications-4.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notifications/telegram.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +33,17 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Jenkins_AR2" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Jenkins_AR2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Jenkins_AR2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -39,6 +55,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,20 +73,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.Tests in 'Jenkins_AR2.test'.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/AeroRunner/IdeaProjects/Jenkins_AR2/Jenkins_AR2/src/test/java/pages&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.Jenkins_AR2 [allureReport].executor": "Run",
+    "Gradle.Jenkins_AR2 [allureServe].executor": "Run",
+    "Gradle.Jenkins_AR2 [regPageShort].executor": "Run",
+    "Gradle.Jenkins_AR2 [test].executor": "Run",
+    "Gradle.RegitrationPageTest.executor": "Run",
+    "Gradle.RegitrationPageTest.filingRequiredFieldsRegistrPage.executor": "Run",
+    "Gradle.SystemPropertiesTest.executor": "Run",
+    "Gradle.SystemPropertiesTest.systemPropertiesTest.executor": "Run",
+    "Gradle.Tests in 'Jenkins_AR2.test' (1).executor": "Run",
+    "Gradle.Tests in 'Jenkins_AR2.test'.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/AeroRunner/IdeaProjects/Jenkins_AR2/Jenkins_AR2/src/test/java/notifications",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AeroRunner\IdeaProjects\Jenkins_AR2\Jenkins_AR2\src\test\java\notifications" />
       <recent name="C:\Users\AeroRunner\IdeaProjects\Jenkins_AR2\Jenkins_AR2\src\test\java\pages" />
       <recent name="C:\Users\AeroRunner\IdeaProjects\Jenkins_AR2\Jenkins_AR2\src\test\resources" />
     </key>
@@ -80,7 +108,99 @@
       <recent name="helpers" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.Tests in 'Jenkins_AR2.test'">
+    <configuration name="Jenkins_AR2 [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--scan --info" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="allureReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Jenkins_AR2 [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="allureServe" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegitrationPageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.RegitrationPageTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegitrationPageTest.filingRequiredFieldsRegistrPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.RegitrationPageTest.filingRequiredFieldsRegistrPage&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Tests in 'Jenkins_AR2.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -92,7 +212,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":regPage" />
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -106,6 +226,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'Jenkins_AR2.test'" />
+        <item itemvalue="Gradle.RegitrationPageTest" />
+        <item itemvalue="Gradle.RegitrationPageTest.filingRequiredFieldsRegistrPage" />
+        <item itemvalue="Gradle.Jenkins_AR2 [allureReport]" />
+        <item itemvalue="Gradle.Jenkins_AR2 [allureServe]" />
       </list>
     </recent_temporary>
   </component>
