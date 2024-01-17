@@ -50,14 +50,14 @@ task regPageFull(type: Test) {
     useJUnitPlatform {
         includeTags("regPageFull")
     }
-    task regPageShort(type: Test) {
-        useJUnitPlatform {
-            includeTags("regPageShort")
-        }
+}
+task regPageNegative(type: Test) {
+    useJUnitPlatform {
+        includeTags("regPageNegative")
     }
-    task regPageNegative(type: Test) {
-        useJUnitPlatform {
-            includeTags("regPageNegative")
-        }
+}
+task regPageShort(type: Test) {
+    useJUnitPlatform {
+        includeTags("regPageShort")
     }
 }

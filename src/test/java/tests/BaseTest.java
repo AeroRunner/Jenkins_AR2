@@ -21,9 +21,9 @@ public class BaseTest {
     public static void setUP() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
-        step(" Set remote browser", () -> {
-            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-        });
+//        step(" Set remote browser", () -> {
+//            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+//        });
         step("Set timeout(10000)", () -> {
 
             Configuration.timeout = 10000;
@@ -31,9 +31,9 @@ public class BaseTest {
         step("Set baseUrl - https://demoqa.com", () -> {
             Configuration.baseUrl = "https://demoqa.com";
         });
-        step("Set browsersize(1920x1080)", () -> {
-            Configuration.browserSize = "1920x1080";
-        });
+//        step("Set browsersize(1920x1080)", () -> {
+//            Configuration.browserSize = "1920x1080";
+//        });
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
