@@ -61,8 +61,3 @@ task regPageShort(type: Test) {
         includeTags("regPageShort")
     }
 }
-task prop(type: Test) {
-    useJUnitPlatform {
-        includeTags("prop")
-    }
-}

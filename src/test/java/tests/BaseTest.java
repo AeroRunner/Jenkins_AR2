@@ -31,9 +31,8 @@ public class BaseTest {
             Configuration.browserSize = System.getProperty("BrowserSize", "1920x1080");
             Configuration.baseUrl = "https://demoqa.com";
             Configuration.pageLoadStrategy = "eager";
-            Configuration.timeout = 20000;
+            Configuration.timeout = 10000;
             Configuration.browserVersion = System.getProperty("BrowserVersion", "100");
-            Configuration.webdriverLogsEnabled = true;
             Configuration.browser = System.getProperty("BrowserName", "chrome");
             Configuration.browserCapabilities = capabilities;
         });
