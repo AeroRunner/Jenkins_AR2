@@ -21,28 +21,24 @@ public class BaseTest {
     public static void setUP() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
-        step(" Set remote browser", () -> {
-            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-        });
-        step("Set timeout(10000)", () -> {
-
-            Configuration.timeout = 10000;
-        });
-        step("Set baseUrl - https://demoqa.com", () -> {
+        step("Setup configurations before all tests", () -> {
+            Configuration.remote
+                    = System.getProperty("selenoid", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                    "enableVNC", true,
+                    "enableVideo", true));
+            Configuration.browserSize = System.getProperty("size", "1920x1080");
             Configuration.baseUrl = "https://demoqa.com";
+            Configuration.pageLoadStrategy = "eager";
+            Configuration.timeout = 20000;
+            Configuration.browserVersion = System.getProperty("version", "100");
+            Configuration.webdriverLogsEnabled = true;
+            Configuration.browser = System.getProperty("browser", "chrome");
+            Configuration.browserCapabilities = capabilities;
         });
-        step("Set browsersize(1920x1080)", () -> {
-            Configuration.browserSize = "1920x1080";
-        });
-
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-                "enableVNC", true,
-                "enableVideo", true
-        ));
-        Configuration.browserCapabilities = capabilities;
-
     }
+
     @DisplayName("After every test")
     @AfterEach
     void afterEveryTest() {
