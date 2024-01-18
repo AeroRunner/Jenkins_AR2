@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="425487e1-f2f8-496d-8fff-2d3a189b5df3" name="Changes" comment="initall commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegitrationPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegitrationPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +82,7 @@
     "Gradle.Jenkins_AR2 [smoke_test].executor": "Run",
     "Gradle.Jenkins_AR2 [test].executor": "Run",
     "Gradle.RegitrationPageTest.executor": "Run",
+    "Gradle.RegitrationPageTest.filingAndCheckResultRegistrationPageTest (1).executor": "Run",
     "Gradle.RegitrationPageTest.filingAndCheckResultRegistrationPageTest.executor": "Run",
     "Gradle.RegitrationPageTest.filingRequiredFieldsRegistrPage.executor": "Run",
     "Gradle.SystemPropertiesTest.executor": "Run",
@@ -116,7 +114,7 @@
       <recent name="helpers" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegitrationPageTest">
+  <component name="RunManager" selected="Gradle.RegitrationPageTest.filingAndCheckResultRegistrationPageTest (1)">
     <configuration name="Jenkins_AR2 [full_fields]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -207,7 +205,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegitrationPageTest.filingAndCheckResultRegistrationPageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegitrationPageTest.filingAndCheckResultRegistrationPageTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -218,7 +216,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":smoke_test" />
+            <option value=":full_fields_test" />
             <option value="--tests" />
             <option value="&quot;tests.RegitrationPageTest.filingAndCheckResultRegistrationPageTest&quot;" />
           </list>
@@ -233,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegitrationPageTest.filingAndCheckResultRegistrationPageTest (1)" />
         <item itemvalue="Gradle.RegitrationPageTest" />
         <item itemvalue="Gradle.Jenkins_AR2 [test]" />
         <item itemvalue="Gradle.Jenkins_AR2 [full_fields_test]" />
         <item itemvalue="Gradle.Jenkins_AR2 [full_fields]" />
-        <item itemvalue="Gradle.RegitrationPageTest.filingAndCheckResultRegistrationPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -281,6 +279,11 @@
           <properties class="java.lang.IllegalStateException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/BaseTest.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
