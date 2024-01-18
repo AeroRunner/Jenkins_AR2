@@ -29,12 +29,14 @@ public class BaseTest {
                     "enableVNC", true,
                     "enableVideo", true));
             Configuration.browserSize = System.getProperty("size", "1920x1080");
-            Configuration.baseUrl = System.getProperty("BaseUrl", "https://demoqa.com");
+            Configuration.baseUrl = System.getProperty("baseUrl", "https://demoqa.com");
             Configuration.pageLoadStrategy = "eager";
             Configuration.timeout = 10000;
-            Configuration.browserVersion = System.getProperty("BrowserVersion", "100");
+            Configuration.browserVersion = System.getProperty("version", "100");
             Configuration.browser = System.getProperty("browser", "chrome");
             Configuration.browserCapabilities = capabilities;
+            Configuration.webdriverLogsEnabled = true;
+            Configuration.headless = false;
         });
     }
 
