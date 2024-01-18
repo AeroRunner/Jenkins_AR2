@@ -19,7 +19,7 @@ public class RegitrationPageTest extends BaseTest {
 
     @DisplayName("Full Registration Page Test: Filing and Check Result Form")
     @Test
-    @Tag("smoke")
+    @Tag("fallMozilla")
     public void filingAndCheckResultRegistrationPageTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Open Registration Page", () -> {
