@@ -36,7 +36,6 @@ public class BaseTest {
             Configuration.browser = System.getProperty("browser", "chrome");
             Configuration.browserCapabilities = capabilities;
             Configuration.webdriverLogsEnabled = true;
-            Configuration.headless = false;
         });
     }
 
