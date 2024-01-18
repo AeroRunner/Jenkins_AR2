@@ -53,7 +53,7 @@ public class RegitrationPageTest extends BaseTest {
             regPage.choiceHobby(data.sports);
         });
         step("Upload test image (testimage.png)", () -> {
-            regPage.uploadImage(data.testImg);
+            regPage.uploadImage();
         });
         step("Enter current address 'Krajiska 87'", () -> {
             regPage.setCurrAddress(data.currAddress);

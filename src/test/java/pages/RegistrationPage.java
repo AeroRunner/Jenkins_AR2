@@ -3,6 +3,8 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 import components.CalendarComponents;
 
+import java.io.File;
+
 import static com.codeborne.selenide.Condition.hidden;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -88,8 +90,9 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage uploadImage(String imageName) {
-        uploadFile.uploadFromClasspath(imageName);
+    public RegistrationPage uploadImage() {
+        File image = new File("src/test/resources/testimage.png");
+        uploadFile.uploadFile(image);
         return this;
     }
 
