@@ -35,7 +35,8 @@ public class BaseTest {
             Configuration.browserVersion = System.getProperty("version", "100");
             Configuration.browser = System.getProperty("browser", "chrome");
             Configuration.browserCapabilities = capabilities;
-            Configuration.webdriverLogsEnabled = true;
+            Configuration.webdriverLogsEnabled = false;
+
         });
     }
 
@@ -44,10 +45,14 @@ public class BaseTest {
     void afterEveryTest() {
         Attach.screenshotAs("Last Screen");
         Attach.pageSource();
-        Attach.browserConsoleLogs();
+        if (!Configuration.browser.equalsIgnoreCase("firefox")){
+            Attach.browserConsoleLogs();
+        }
         Attach.addVideo();
         step("Close Browser", () -> {
-            Selenide.closeWebDriver();
-        });
+            Selenide.closeWebDriver();}
+        );
+
+        }
     }
-}
+

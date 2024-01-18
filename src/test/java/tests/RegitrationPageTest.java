@@ -17,9 +17,9 @@ public class RegitrationPageTest extends BaseTest {
     ResultModal resModal = new ResultModal();
     UserData data = new UserData();
 
+    @Tag("allFields")
     @DisplayName("Full Registration Page Test: Filing and Check Result Form")
     @Test
-    @Tag("fallMozilla")
     public void filingAndCheckResultRegistrationPageTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Open Registration Page", () -> {
@@ -79,10 +79,9 @@ public class RegitrationPageTest extends BaseTest {
         });
 
     }
-
+    @Tag("mandatoryFields")
     @DisplayName("Registration Page only required fields test")
     @Test
-    @Tag("smoke")
     public void filingRequiredFieldsRegistrPage() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Open Registration Page", () -> {
@@ -115,11 +114,10 @@ public class RegitrationPageTest extends BaseTest {
 
 
     }
-
+    @Tag("negative")
     @DisplayName("Registration Page Negative Tests: " +
     "The modal window should not be displayed until the required fields are filled in ")
     @Test
-    @Tag("smoke")
     public void requiredFieldsNegativeTests() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Open Registration Page", () -> {

@@ -46,9 +46,20 @@ tasks.withType(Test) {
         }
     }
 }
-task smoke_test(type: Test) {
+task full_fields_test(type: Test) {
     useJUnitPlatform {
-        includeTags("smoke")
+        includeTags("allFields")
     }
 }
+task mandatory_fields_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("mandatoryFields")
+    }
+}
+task negative_test_(type: Test) {
+        useJUnitPlatform {
+            includeTags("negative")
+        }
+}
+
 

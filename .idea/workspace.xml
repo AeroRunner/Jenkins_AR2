@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="425487e1-f2f8-496d-8fff-2d3a189b5df3" name="Changes" comment="initall commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegitrationPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegitrationPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +78,8 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Gradle.Jenkins_AR2 [allureReport].executor": "Run",
     "Gradle.Jenkins_AR2 [allureServe].executor": "Run",
+    "Gradle.Jenkins_AR2 [full_fields].executor": "Run",
+    "Gradle.Jenkins_AR2 [full_fields_test].executor": "Run",
     "Gradle.Jenkins_AR2 [regPageNegative].executor": "Run",
     "Gradle.Jenkins_AR2 [regPageShort].executor": "Run",
     "Gradle.Jenkins_AR2 [smoke_test].executor": "Run",
@@ -111,8 +116,8 @@
       <recent name="helpers" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegitrationPageTest.filingAndCheckResultRegistrationPageTest">
-    <configuration name="Jenkins_AR2 [regPageNegative]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.RegitrationPageTest">
+    <configuration name="Jenkins_AR2 [full_fields]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -123,7 +128,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="regPageNegative" />
+            <option value="full_fields" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -134,7 +139,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Jenkins_AR2 [smoke_test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Jenkins_AR2 [full_fields_test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -145,7 +150,29 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="smoke_test" />
+            <option value="full_fields_test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Jenkins_AR2 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -204,35 +231,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'Jenkins_AR2.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegitrationPageTest.filingAndCheckResultRegistrationPageTest" />
-        <item itemvalue="Gradle.Jenkins_AR2 [smoke_test]" />
-        <item itemvalue="Gradle.Jenkins_AR2 [regPageNegative]" />
-        <item itemvalue="Gradle.Tests in 'Jenkins_AR2.test'" />
         <item itemvalue="Gradle.RegitrationPageTest" />
+        <item itemvalue="Gradle.Jenkins_AR2 [test]" />
+        <item itemvalue="Gradle.Jenkins_AR2 [full_fields_test]" />
+        <item itemvalue="Gradle.Jenkins_AR2 [full_fields]" />
+        <item itemvalue="Gradle.RegitrationPageTest.filingAndCheckResultRegistrationPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -268,5 +273,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initall commit" />
     <option name="LAST_COMMIT_MESSAGE" value="initall commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
