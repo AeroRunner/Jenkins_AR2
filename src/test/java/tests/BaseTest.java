@@ -23,17 +23,17 @@ public class BaseTest {
 
         step("Setup configurations before all tests", () -> {
             Configuration.remote
-                    = System.getProperty("SelenoidRemote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+                    = System.getProperty("selenoid", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                     "enableVNC", true,
                     "enableVideo", true));
-            Configuration.browserSize = System.getProperty("BrowserSize", "1920x1080");
+            Configuration.browserSize = System.getProperty("size", "1920x1080");
             Configuration.baseUrl = System.getProperty("BaseUrl", "https://demoqa.com");
             Configuration.pageLoadStrategy = "eager";
             Configuration.timeout = 10000;
             Configuration.browserVersion = System.getProperty("BrowserVersion", "100");
-            Configuration.browser = System.getProperty("BrowserName", "chrome");
+            Configuration.browser = System.getProperty("browser", "chrome");
             Configuration.browserCapabilities = capabilities;
         });
     }

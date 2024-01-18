@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="425487e1-f2f8-496d-8fff-2d3a189b5df3" name="Changes" comment="initall commit">
-      <change beforePath="$PROJECT_DIR$/notifications/telegram.json" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/telegram.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegitrationPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegitrationPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +78,9 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Gradle.Jenkins_AR2 [allureReport].executor": "Run",
     "Gradle.Jenkins_AR2 [allureServe].executor": "Run",
+    "Gradle.Jenkins_AR2 [regPageNegative].executor": "Run",
     "Gradle.Jenkins_AR2 [regPageShort].executor": "Run",
+    "Gradle.Jenkins_AR2 [smoke_test].executor": "Run",
     "Gradle.Jenkins_AR2 [test].executor": "Run",
     "Gradle.RegitrationPageTest.executor": "Run",
     "Gradle.RegitrationPageTest.filingRequiredFieldsRegistrPage.executor": "Run",
@@ -98,6 +103,9 @@
       <recent name="C:\Users\AeroRunner\IdeaProjects\Jenkins_AR2\Jenkins_AR2\src\test\java\pages" />
       <recent name="C:\Users\AeroRunner\IdeaProjects\Jenkins_AR2\Jenkins_AR2\src\test\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AeroRunner\IdeaProjects\Jenkins_AR2\Jenkins_AR2\notifications" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="utils" />
       <recent name="tests" />
@@ -105,30 +113,8 @@
       <recent name="helpers" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'Jenkins_AR2.test'">
-    <configuration name="Jenkins_AR2 [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--scan --info" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="allureReport" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Jenkins_AR2 [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Jenkins_AR2 [smoke_test]">
+    <configuration name="Jenkins_AR2 [regPageNegative]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -139,7 +125,29 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="allureServe" />
+            <option value="regPageNegative" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Jenkins_AR2 [smoke_test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="smoke_test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -222,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Jenkins_AR2 [smoke_test]" />
+        <item itemvalue="Gradle.Jenkins_AR2 [regPageNegative]" />
         <item itemvalue="Gradle.Tests in 'Jenkins_AR2.test'" />
         <item itemvalue="Gradle.RegitrationPageTest" />
         <item itemvalue="Gradle.RegitrationPageTest.filingRequiredFieldsRegistrPage" />
-        <item itemvalue="Gradle.Jenkins_AR2 [allureReport]" />
-        <item itemvalue="Gradle.Jenkins_AR2 [allureServe]" />
       </list>
     </recent_temporary>
   </component>
